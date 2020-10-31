@@ -29,7 +29,7 @@ public class MultiExecutor {
     public void executeAll() {
         for (Runnable task : tasks) {
             Thread thread = new Thread(task);
-            thread.run();
+            thread.start();
         }
     }
 }
